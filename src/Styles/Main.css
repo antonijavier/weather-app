@@ -1,0 +1,40 @@
+body{
+  margin: 0px;
+}
+.scrMain{
+  height: 700px;
+  width: 30%;
+  background-image: url(../Images/imgMain.png);
+  background-size: cover;
+  margin: 0px;
+}
+
+.frmHead{
+  width: 100%;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+
+.lnkSearch4Places{
+  text-decoration: none;
+  font-size: 14px;
+  color: ivory;
+}
+
+.btnSearch4Places{
+  width: 130px;
+  height: 35px;
+  background-color: grey;
+  box-shadow: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+}
+.btnLocation{
+  background-image: url(../Images/Location.png);
+  width: 40px;
+  height: 40px;
+  margin: 30px;
+}
