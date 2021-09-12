@@ -14,7 +14,9 @@ function Main() {
         .then(response => setCurrentWeather(response));
     })
   }, []);
-  
+  const celsiusTemp = Math.ceil([(5/9)*(currentWeather.main.temp-32)]/10);
+  const currentTime = Date.now();
+  const today = new Date(currentTime);
   return (
     <section className="scrMain"> 
       <div className="frmHead">
@@ -26,10 +28,20 @@ function Main() {
         </div>
       </div>
       <div className="frmMain">
-
+        <div className="imgWeatherState"></div>
+        <div class="lblTemperature">
+          <div className="temperatureValue">{celsiusTemp}</div>
+          <div className="degrees">ºC</div>
+        </div>
+        <div className="lblTimeState">{currentWeather.weather[0].main}</div>
       </div>
       <div className="frmFoot">
-
+        <div className="d-flex justify-content-center">
+          <div className="upperFooter">Today</div>
+          <div className="upperFooter">.</div>
+          <div className="upperFooter">{today.toDateString()}</div>
+        </div>
+        <div className="footer">{currentWeather.name}</div>
       </div>
     </section>
   )

@@ -1,13 +1,16 @@
+
 body{
   margin: 0px;
 }
 .scrMain{
-  height: 700px;
+  height: 750px;
   width: 30%;
   background-image: url(../Images/imgMain.png);
   background-size: cover;
   margin: 0px;
 }
+
+/*------------------------HEADER SECTION----------------------------------------*/
 
 .frmHead{
   width: 100%;
@@ -37,4 +40,60 @@ body{
   width: 40px;
   height: 40px;
   margin: 30px;
+}
+
+/*-----------------------------------MAIN SECTION---------------------------------------*/
+.imgWeatherState{
+  background-image: url('../Images/PartiallyCloudy.png');
+  width: 150px;
+  height: 150px;
+  margin-left: 125px;
+  margin-top: 60px;
+}
+.lblTemperature{
+  margin-top: 80px;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.temperatureValue{
+  font-size: 100px;
+  font-weight:400px;
+  color: ivory;
+}
+.degrees{
+  font-size: 40px;
+  font-weight: 400px;
+  color: ivory;
+  margin-top: 15%;
+}
+.lblTimeState{
+  font-size: 30px;
+  color: ivory;
+  display: flex;
+  justify-content: center;
+  font-weight: 300px;
+  margin-top: 30px;
+}
+
+/*-----------------------------FOOTER SECTION--------------------------------------*/
+.frmFoot{
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+.upperFooter{
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  color:slategray;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+.footer{
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  color:slategray;
+  margin-bottom: 10px;
 }
