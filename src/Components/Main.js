@@ -2,6 +2,10 @@ import React from 'react'
 import '../Styles/Main.css'
 import { useState } from 'react'
 import { useEffect } from 'react'
+import { BrowserRouter,
+         Link,
+         Route
+       } from 'react-router-dom';
 
 function Main() {
   const [currentWeather,setCurrentWeather] = useState([]);
@@ -9,19 +13,21 @@ function Main() {
     navigator.geolocation.getCurrentPosition(function(position){
       const currentLatitude = position.coords.latitude;
       const currentLongitude = position.coords.longitude;
-      fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${currentLatitude}&lon=${currentLongitude}&appid=3b7f2699afa3a2b22d46f515d82d65fb`)
+      fetch(`https://powerful-mountain-49469.herokuapp.com/https://www.metaweather.com/api/location/search/?lattlong=${currentLatitude},${currentLongitude}`)
         .then(response => response.json())
-        .then(response => setCurrentWeather(response));
+        .then(response => console.log(response));
     })
   }, []);
-  const celsiusTemp = Math.ceil([(5/9)*(currentWeather.main.temp-32)]/10);
+  //console.log(currentWeather);
+  //const celsiusTemp = Math.ceil(currentWeather.main.temp/10);
   const currentTime = Date.now();
   const today = new Date(currentTime);
   return (
+    <BrowserRouter>
     <section className="scrMain"> 
       <div className="frmHead">
         <div className="btnSearch4Places">
-          <a href="#" className="lnkSearch4Places">Search For Places</a>
+          <Link to="/Search" className="lnkSearch4Places">Search For Places</Link>
         </div>
         <div className="btnLocation">
           <a href="#"></a>
@@ -30,10 +36,10 @@ function Main() {
       <div className="frmMain">
         <div className="imgWeatherState"></div>
         <div class="lblTemperature">
-          <div className="temperatureValue">{celsiusTemp}</div>
+          <div className="temperatureValue">{/*celsiusTemp*/}</div>
           <div className="degrees">ºC</div>
         </div>
-        <div className="lblTimeState">{currentWeather.weather[0].main}</div>
+        <div className="lblTimeState">{/*currentWeather.weather[0].main*/}</div>
       </div>
       <div className="frmFoot">
         <div className="d-flex justify-content-center">
@@ -41,9 +47,10 @@ function Main() {
           <div className="upperFooter">.</div>
           <div className="upperFooter">{today.toDateString()}</div>
         </div>
-        <div className="footer">{currentWeather.name}</div>
+        <div className="footer">{/*currentWeather.name*/}</div>
       </div>
     </section>
+    </BrowserRouter>
   )
 }
 

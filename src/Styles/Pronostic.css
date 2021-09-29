@@ -1,0 +1,146 @@
+.frmPronostic{
+  width: 70%;
+  height: 750px;
+  background-color: blue;
+  margin-left: 30%;
+}
+
+/*------------------------HEADER SECTION----------------------------------------*/
+
+.frmHead{
+  width: 91%;
+  display: flex;
+  justify-content:end;
+  align-items: center;
+}
+
+.btnCelsius{
+  background-image: url(../Images/Degrees.png);
+  width: 40px;
+  height: 40px;
+  margin: 15px;
+}
+
+.btnFarenheit{
+  background-image: url(../Images/Farenheit.png);
+  width: 40px;
+  height: 40px;
+  margin: 15px;
+}
+
+/*-----------------------------------FORECAST SECTION---------------------------------------*/
+
+
+.card{
+  background-color: blueviolet;
+  width: 12%;
+  height: 150px;
+  margin-left: 2%;
+  margin-right: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.forecastDay{
+  font-size: 18px;
+  color: ivory;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15%;
+}
+.weatherForecast{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 50%;
+}
+.imgWeatherForecast{
+  background-image: url('../Images/PartiallyCloudy.png');
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+}
+.lblTempForecast{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 15%;
+  width: 100%;
+  background-color: burlywood;
+}
+.lblTempMax{
+  display: flex;
+}
+.lblTempMin{
+  display: flex;
+}
+.forecastTempValue{
+  font-size: 14px;
+  color: ivory;
+}
+.celsiusDegrees{
+  font-size: 14px;
+  color: ivory;
+}
+
+
+/*------------------------------MEASUREMENTS SECTION -------------------------------------------*/
+.subSectionTitle{
+  margin-top: 5%;
+  font-size: 15px;
+  color: ivory;
+  margin-left: 11%;
+}
+.row2{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.card2{
+  width: 37%;
+  margin: 2%;
+  background-color: violet;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 180px;
+}
+.cardTitle{
+  font-size: 16px;
+  color: ivory;
+  height: 20%;
+}
+.cardBody{
+  display: flex;
+  height: 50%;
+}
+.measureValue{
+  font-size: 40px;
+  font-weight: 500;
+  color: ivory;
+  display: flex;
+  align-items: center;
+}
+.measureUnit{
+  font-size: 20px;
+  color: ivory;
+  display: flex;
+  align-items: center;
+}
+.cardIcon{
+  font-size: 14px;
+  color: ivory;
+  height: 20%;
+}
+.card3{
+  width: 37%;
+  margin: 2%;
+  background-color: violet;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+}

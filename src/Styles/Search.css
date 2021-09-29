@@ -1,0 +1,66 @@
+.scrSearch{
+  height: 750px;
+  width: 30%;
+  background-color: #1E213A;
+  background-size: cover;
+  margin: 0px;
+}
+.btnCancel{
+  text-decoration: none;
+  color: ivory;
+  display: flex;
+  justify-content: end;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  padding-right: 7%;
+}
+.frmSearch{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
+}
+.txtSearch{
+  margin: 3%;
+  width: 65%;
+}
+.btnSearch{
+  margin: 3%;
+}
+
+.item{
+  color: ivory;
+  margin-left: 7%;
+  margin-right: 7%;
+  margin-top: 3%;
+  height: 50px;
+  padding-left: 3%;
+  display: flex;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+} 
+.item:hover{
+  color: ivory;
+  margin-left: 7%;
+  margin-right: 7%;
+  margin-top: 3%;
+  height: 50px;
+  border: 1px solid lightgray;
+  padding-left: 3%;
+  padding-right: 3%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.itemLink{
+  text-decoration: none;
+  color: ivory;
+}
+
+.btnGo{
+  text-decoration: none;
+  color: #1E213A;
+}
+.item:hover a{
+  color: ivory;
+}
